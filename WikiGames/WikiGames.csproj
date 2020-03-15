@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp.Newtonsoft.Json" Version="1.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Client\" />
+    <Folder Include="Model\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Layouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Layouts\MasterPage.xaml.cs">
+      <DependentUpon>MasterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Layouts\SingleGamePage.xaml.cs">
+      <DependentUpon>SingleGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Layouts\Games2Page.xaml.cs">
+      <DependentUpon>Games2Page.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
