@@ -1,5 +1,5 @@
 ﻿using System;
-namespace WikiGames.Model
+namespace WikiGames.Models
 {
     public class Juego
     {

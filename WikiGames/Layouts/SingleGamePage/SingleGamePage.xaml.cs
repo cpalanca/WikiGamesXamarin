@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace WikiGames.Layouts
+namespace WikiGames.Layouts.SingleGamePage
 {
     public partial class SingleGamePage : ContentPage
     {

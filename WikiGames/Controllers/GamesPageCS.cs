@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using WikiGames.Client;
 using WikiGames.Layouts;
-using WikiGames.Model;
+using WikiGames.Layouts.SingleGamePage;
+using WikiGames.Models;
 using Xamarin.Forms;
 
-namespace WikiGames
+namespace WikiGames.Controllers
 {
     public class GamesPageCS : ContentPage
     {
@@ -36,7 +37,7 @@ namespace WikiGames
                     {
                         System.Diagnostics.Debug.WriteLine(juego.Titulo);
                     };
-                   /* CoolLabelStack.Children.Add(image);
+                    /*CoolLabelStack.Children.Add(image);
                     //System.Diagnostics.Debug.WriteLine("https://informatica.ieszaidinvergeles.org:9062/proyecto/public/uploads/" + juego.Caratula);
                     Label label = new Label();
                     label.Text = juego.Titulo;

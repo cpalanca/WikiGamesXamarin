@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using WikiGames.Controllers;
 
 
 namespace WikiGames

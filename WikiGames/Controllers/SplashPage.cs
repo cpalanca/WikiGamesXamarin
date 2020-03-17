@@ -1,7 +1,8 @@
 ﻿using System;
+using WikiGames.Layouts;
 using Xamarin.Forms;
 
-namespace WikiGames
+namespace WikiGames.Controllers
 {
     public class SplashPage : ContentPage
     {

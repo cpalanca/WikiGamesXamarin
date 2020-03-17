@@ -105,7 +105,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -122,5 +122,15 @@
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\menuheader.jfif" />
+    <BundleResource Include="Resources\ProfileSetting.png" />
+    <BundleResource Include="Resources\user.jpg" />
+    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\Home.png" />
+    <BundleResource Include="Resources\About.png" />
+    <BundleResource Include="Resources\Configuration.png" />
+    <BundleResource Include="Resources\bg-home.png" />
   </ItemGroup>
 </Project>

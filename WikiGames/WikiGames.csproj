@@ -11,26 +11,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.356" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="RestSharp.Newtonsoft.Json" Version="1.5.1" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="DLToolkit.Forms.Controls.FlowListView" Version="2.0.11" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Client\" />
-    <Folder Include="Model\" />
+    <Folder Include="Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Layouts\" />
+    <Folder Include="Layouts\SingleGamePage\" />
+    <Folder Include="Layouts\Home\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Layouts\MasterPage.xaml.cs">
-      <DependentUpon>MasterPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="Layouts\SingleGamePage.xaml.cs">
-      <DependentUpon>SingleGamePage.xaml</DependentUpon>
-    </Compile>
+    <Compile Remove="Layouts\Configuration\ConfigurationPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Layouts\Games2Page.xaml.cs">
       <DependentUpon>Games2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Layouts\Profile Settings\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Layouts\SingleGamePage\SingleGamePage.xaml.cs">
+      <DependentUpon>SingleGamePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Layouts\Home\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

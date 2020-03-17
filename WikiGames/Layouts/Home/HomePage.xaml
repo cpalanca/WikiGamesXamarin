@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+            ios:Page.UseSafeArea="true"
+             x:Class="WikiGames.Layouts.Home.HomePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <StackLayout Padding="30" x:Name="CoolLabelStack">
+                <Label Text="Lista de Juegos!" HorizontalOptions="Center" />
+                <!-- van los juegos -->
+                <!-- van los juegos -->
+            </StackLayout>
+            <Button Text="SplahPage" Clicked="btnPag3_cliked"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
